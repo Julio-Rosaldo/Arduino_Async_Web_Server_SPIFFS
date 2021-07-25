@@ -1,0 +1,23 @@
+    .wheater {
+    font-size: 2.5rem;
+}
+
+.wheaterlabel { font-size: 2rem; }
+        
+.unitslabel { font-size: 1.5rem; }
+
+.thermometer {
+    height: 50px;
+    color: red;
+}
+
+.humidity {
+    height: 50px;
+    color: deepskyblue;
+}
+
+.heat {
+    height: 50px;
+    color: lime;
+    transform:rotate(90deg);
+}

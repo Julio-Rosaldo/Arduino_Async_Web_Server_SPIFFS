@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Iluminación</title>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1">   
+    
+    <link rel="stylesheet" type="text/css" href="light-style.css">
+    <link rel="stylesheet" type="text/css" href="menu-style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+<body class="display">    
+    <p></p>
+    
+    <div id="menu" class="d-flex justify-content-center bg-dark">
+        #MENU#
+    </div>
+    
+    <p></p>
+    
+    <h4>La lampara 1 esta <strong id="light1">%LIGHT1%</strong></h4>
+    
+    <h4>Output - GPIO 02</h4><label class="switch"><input type="checkbox" onchange="setLight(this)" id="2"><span class="slider"></span></label>
+    
+    <h4>La lampara 2 esta <strong id="light2">%LIGHT2%</strong></h4>
+    
+    <h4>Output - GPIO 23</h4><label class="switch"><input type="checkbox" onchange="setLight(this)" id="23"><span class="slider"></span></label>
+    
+    <h4>La lampara 3 esta <strong id="light3">%LIGHT3%</strong></h4>
+    
+    <h4>Output - GPIO 22</h4><label class="switch"><input type="checkbox" onchange="setLight(this)" id="22"><span class="slider"></span></label>
+    
+</body>
+
+<script type="text/javascript" src="menu.js"></script>   
+<script type="text/javascript" src="light.js"></script>
+<script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="popper.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+</html>
