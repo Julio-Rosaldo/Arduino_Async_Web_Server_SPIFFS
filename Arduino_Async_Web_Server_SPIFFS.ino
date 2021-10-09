@@ -154,6 +154,11 @@ void setup() {
     request->send(SPIFFS, "/menu.js", "text/javascript");
   });
 
+  // Route to common menu file
+  server.on("/menu.html", HTTP_GET, [](AsyncWebServerRequest * request) {
+    request->send(SPIFFS, "/menu.html", "text/html", false);
+  });
+
   // Route to load style.css file
   server.on("/menu-style.css", HTTP_GET, [](AsyncWebServerRequest * request) {
     request->send(SPIFFS, "/menu-style.css", "text/css");
